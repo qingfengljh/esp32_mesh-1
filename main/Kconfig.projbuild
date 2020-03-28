@@ -1,0 +1,22 @@
+menu "Example Configuration"
+
+config DEVICE_VERSION
+    string "Device version"
+    default "0.0.1"
+    help
+        Config device version
+
+
+config ROUTER_PASSWORD
+    string "Router password"
+        default "ROUTER_PASSWORD"
+        help
+            Router password.
+
+config MESH_PASSWORD
+    string "Mesh Password"
+    default "MESH_PASSWORD"
+    help
+        Mesh AP password. Password length must be 8 bits smaller than 64 bits,Set to null to not encrypt
+
+endmenu
